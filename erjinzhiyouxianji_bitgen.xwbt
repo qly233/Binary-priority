@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\szdl\erjinzhiyouxianji\erjinzhiyouxianji.ncd
+OUTFILE=D:\szdl\erjinzhiyouxianji\erjinzhiyouxianji.bit
+FAMILY=Artix7
+PART=xc7a100t-2lfgg484
+WORKINGDIR=D:\szdl\erjinzhiyouxianji
+LICENSE=WebPack
+USER_INFO=__0_0_0

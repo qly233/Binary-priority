@@ -1,0 +1,60 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Nov 17 22:33:35 2021
+# Process ID: 59972
+# Log file: D:/szdl/erjinzhiyouxianji/planAhead_run_1/planAhead.log
+# Journal file: D:/szdl/erjinzhiyouxianji/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/szdl/erjinzhiyouxianji/pa.fromNetlist.tcl
+set_property iostandard LVCMOS18 [get_ports [list {IN[7]} {IN[6]} {IN[5]} {IN[4]} {IN[3]} {IN[2]} {IN[1]} {IN[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {Y[2]} {Y[1]} {Y[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list Done]]
+set_property iostandard LVCMOS18 [get_ports [list EN]]
+set_property pulltype PULLDOWN [get_ports [list Done]]
+set_property pulltype NONE [get_ports [list Done]]
+set_property pulltype PULLDOWN [get_ports [list EN]]
+set_property pulltype PULLDOWN [get_ports [list {IN[7]} {IN[6]} {IN[5]} {IN[4]} {IN[3]} {IN[2]} {IN[1]} {IN[0]}]]
+set_property package_pin "" [get_ports [list  {IN[0]}]]
+startgroup
+set_property package_pin T3 [get_ports EN]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports Done]
+endgroup
+set_property package_pin "" [get_ports [list  {IN[0]}]]
+startgroup
+set_property package_pin W7 [get_ports {IN[7]}]
+endgroup
+startgroup
+set_property package_pin Y8 [get_ports {IN[6]}]
+endgroup
+startgroup
+set_property package_pin Y7 [get_ports {IN[5]}]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports {IN[4]}]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports {IN[3]}]
+endgroup
+startgroup
+set_property package_pin U2 [get_ports {IN[2]}]
+endgroup
+startgroup
+set_property package_pin W1 [get_ports {IN[1]}]
+endgroup
+startgroup
+set_property package_pin W2 [get_ports {IN[0]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {Y[2]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {Y[1]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {Y[0]}]
+endgroup
+save_constraints

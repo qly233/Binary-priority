@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/szdl/erjinzhiyouxianji/erjinzhiyouxianji.xst" -ofn "D:/szdl/erjinzhiyouxianji/erjinzhiyouxianji.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc erjinzhiyouxianji.ucf -p xc7a100t-fgg484-2L erjinzhiyouxianji.ngc erjinzhiyouxianji.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o erjinzhiyouxianji_map.ncd erjinzhiyouxianji.ngd erjinzhiyouxianji.pcf 
+par -w -intstyle ise -ol high -mt off erjinzhiyouxianji_map.ncd erjinzhiyouxianji.ncd erjinzhiyouxianji.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml erjinzhiyouxianji.twx erjinzhiyouxianji.ncd -o erjinzhiyouxianji.twr erjinzhiyouxianji.pcf -ucf erjinzhiyouxianji.ucf 
+bitgen -intstyle ise -f erjinzhiyouxianji.ut erjinzhiyouxianji.ncd 
